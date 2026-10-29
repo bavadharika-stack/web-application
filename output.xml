@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-07-01T15:08:37.139833" rpa="false" schemaversion="5">
+<suite id="s1" name="Uploading File" source="C:\Users\bavad\PycharmProjects\RobotFramework\tests\Uploading_File.robot">
+<test id="s1-t1" name="Validate UnSuccessful Login" line="7">
+<kw name="Open The Browser With The Mortgage Payment URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:37.395368" level="INFO">Opening browser 'chrome' to base url 'https://smartmoopay-uat.smartmoo.com/smartmoopay-loans/users/list'.</msg>
+<msg time="2025-07-01T15:08:39.587747" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Windows\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.122); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-01T15:08:37.395368" elapsed="10.633295"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-01T15:08:48.029470" elapsed="0.048155"/>
+</kw>
+<status status="PASS" start="2025-07-01T15:08:37.395368" elapsed="10.682257"/>
+</kw>
+<kw name="Fill The Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${USERNAME_AT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-01T15:08:48.083943" elapsed="0.070676"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:48.157473" level="INFO">Typing text 'stpl.charan.hr' into text field 'css:input[name='userName']'.</msg>
+<arg>${USERNAME_AT}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:08:48.154619" elapsed="0.288429"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:08:49.443939" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:08:48.443048" elapsed="1.001759"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:49.444807" level="INFO">Clicking element 'css:.MuiButton-label'.</msg>
+<arg>${ENTER_USERNAME_SUBMIT_AT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:08:49.444807" elapsed="0.250689"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:08:50.697836" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:08:49.697506" elapsed="1.000330"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:50.697836" level="INFO">Typing text 'Stpl@2026' into text field 'id:password'.</msg>
+<arg>${ENTER_PASSWORD_AT}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:08:50.697836" elapsed="0.278333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:08:51.976818" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:08:50.976169" elapsed="1.000649"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:51.976818" level="INFO">Clicking button 'id:kc-login'.</msg>
+<arg>${SUBMIT_FOR_SUCCESSFUL_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:08:51.976818" elapsed="0.622454"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:08:54.599852" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:08:52.599272" elapsed="2.000580"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CHECK_HOME_PAGE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-01T15:08:54.600949" elapsed="0.501861"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:08:55.102810" level="INFO">Clicking element '(//div[@class='col-md-3 col-xs-3'])[1]'.</msg>
+<arg>${CHECK_HOME_PAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:08:55.102810" elapsed="0.225722"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:00.331232" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:08:55.330764" elapsed="5.000468"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:00.331232" level="INFO">Clicking button 'css:button[aria-label='open drawer']'.</msg>
+<arg>${CLICK_MENU}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:00.331232" elapsed="0.260335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:02.591924" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:00.591567" elapsed="2.000357"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:02.591924" level="INFO">Clicking element 'css:body &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; ul:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(3)'.</msg>
+<arg>${CLICK_LENDING}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:02.591924" elapsed="0.187761"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:04.780866" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:02.779685" elapsed="2.001181"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:04.780866" level="INFO">Clicking element 'css:div[class='MuiCollapse-root MuiCollapse-entered'] div:nth-child(2) div:nth-child(2) span:nth-child(1)'.</msg>
+<arg>${CLICK_LOAN_REQUEST}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:04.780866" elapsed="0.226189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:07.011093" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:05.008576" elapsed="2.002517"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:07.012246" level="INFO">Clicking element 'xpath:(//*[name()='svg'][@class='MuiSvgIcon-root'])[7]'.</msg>
+<arg>${DISBURSED}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:07.011093" elapsed="0.195425"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:09.207267" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:07.206518" elapsed="2.000749"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:09.207267" level="INFO">Clicking element 'xpath:(//*[name()='svg'][@class='MuiSvgIcon-root'])[9]'.</msg>
+<arg>${IMPORT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:09.207267" elapsed="0.239503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:11.447060" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:09.446770" elapsed="2.000290"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:11.447060" level="INFO">Clicking element 'xpath:(//span[@class='MuiButton-label'])[1]'.</msg>
+<arg>${BROWSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-01T15:09:11.447060" elapsed="0.205996"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T15:09:13.655810" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T15:09:11.655511" elapsed="2.000299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-01T15:09:13.657724" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<arg>${FILE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-01T15:09:13.655810" elapsed="0.001914">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${FILE}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2025-07-01T15:09:13.658380" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${FILE_PATH}</var>
+<arg>C:/Users/bavad/Downloads/LOAN_DISBURSAL_IMPORT.xlsx</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-07-01T15:09:13.658380" elapsed="0.000000"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<arg>${BROWSE}</arg>
+<arg>${FILE_PATH}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" start="2025-07-01T15:09:13.658380" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-01T15:09:13.658380" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-07-01T15:08:48.083943" elapsed="25.574437">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-01T15:09:13.658380" elapsed="2.873267"/>
+</kw>
+<status status="FAIL" start="2025-07-01T15:08:37.395368" elapsed="39.136279">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<doc>To validate the login form</doc>
+<status status="FAIL" start="2025-07-01T15:08:37.139833" elapsed="39.391814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Uploading File" id="s1" pass="0" fail="1" skip="0">Uploading File</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-01T15:08:39.587747" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Windows\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.122); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
